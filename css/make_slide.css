@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider-container {
+  margin: 20px auto;
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.slider-container .slider-number {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  z-index: 2;
+  color: #171717;
+}
+
+.slider-container img {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider-container img.active {
+  opacity: 1;
+}
+
+.slider-controls {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.slider-controls .prev,
+.slider-controls .next {
+  color: #da0037;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ededed;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.slider-controls .bulltes ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controls .bulltes ul li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #ededed;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #da0037;
+  cursor: pointer;
+}
+
+.slider-controls .bulltes ul li.active {
+  background-color: #171717;
+  color: #fff;
+}
+
+.slider-controls .next.disabled,
+.slider-controls .prev.disabled {
+  cursor: no-drop;
+  opacity: 0.6;
+}
