@@ -15,7 +15,7 @@ body {
   height: 400px;
 }
 
-.slider-container .slider-number {
+.slider-container .slide-number {
   position: absolute;
   top: 10px;
   left: 5px;
@@ -54,14 +54,14 @@ body {
   border-radius: 6px;
 }
 
-.slider-controls .bulltes ul {
+.slider-controls .indicators ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slider-controls .bulltes ul li {
+.slider-controls .indicators ul li {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -75,7 +75,7 @@ body {
   cursor: pointer;
 }
 
-.slider-controls .bulltes ul li.active {
+.slider-controls .indicators ul li.active {
   background-color: #171717;
   color: #fff;
 }
