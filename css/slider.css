@@ -13,6 +13,14 @@ body {
   position: relative;
   width: 600px;
   height: 400px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .slider-container {
+    width: 520px;
+    padding: 0px 10px;
+  }
 }
 
 .slider-container .slide-number {
@@ -30,6 +38,14 @@ body {
   z-index: 1;
   opacity: 0;
   transition: opacity 1s;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .slider-container img {
+    width: 500px;
+    height: 356px;
+  }
 }
 
 .slider-container img.active {
@@ -42,6 +58,13 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  .slider-controls {
+    justify-content: space-around;
+    width: 520px;
+  }
 }
 
 .slider-controls .prev,
